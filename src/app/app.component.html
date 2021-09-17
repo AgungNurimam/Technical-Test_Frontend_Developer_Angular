@@ -53,38 +53,42 @@
                   <a>Videos</a>
                   <a>Browse all videos</a>
                 </div>
-                <div class="lg-tiles">
+                <div class="lg-tiles" [style.backgroundImage]="'url('+ articles[0].urlToImage +')'">
+                  <h5>{{articles[0].title}}</h5>
                   <a href="">{{articles[0].author}}</a>
                 </div>
               </div>
-              <div class="col-sm-6" style="padding-bottom: 0.5rem; padding-right: 0.5rem;">
-                <div class="sm-tiles">
-                  <a href="">How to improve your skill</a>
-                </div>
-              </div>
-              <div class="col-sm-6" style="padding-bottom: 0.5rem; padding-right: 0.5rem;">
-                <div class="sm-tiles">
-                  <a href="">How to improve your skill</a>
+              <div *ngFor="let item of articles | slice:1:3" class="col-sm-6" style="padding-bottom: 0.5rem; padding-right: 0.5rem;">
+                <div class="sm-tiles" [style.backgroundImage]="'url('+ item.urlToImage +')'">
+                  <h6>{{item.title}}</h6>
+                  <a href="">{{item.author}}</a>
                 </div>
               </div>
             </div>
-
           </div>
           <div class="col-md-4">
             <div class="row">
+              <!-- <div *ngFor="let item of articles | slice:3:5" class="col-md-12">
+                <div class="sm-tiles mt-4" [style.backgroundImage]="'url('+ item.urlToImage +')'">
+                  <h6>{{item.title}}</h6>
+                  <a href="">{{item.author}}</a>
+                </div>
+              </div> -->
               <div class="col-md-12">
-                <div class="sm-tiles mt-4">
-                  <a href="">How to improve your skill</a>
+                <div class="sm-tiles mt-4" [style.backgroundImage]="'url('+ articles[3].urlToImage +')'">
+                  <h6>{{articles[0].title}}</h6>
+                  <a href="">{{articles[0].author}}</a>
                 </div>
               </div>
               <div class="col-md-12" style="padding-top: 0.5rem;">
-                <div class="sm-tiles">
-                  <a href="">How to improve your skill</a>
+                <div class="sm-tiles" [style.backgroundImage]="'url('+ articles[4].urlToImage +')'">
+                  <h6>{{articles[4].title}}</h6>
+                  <a href="">{{articles[4].author}}</a>
                 </div>
               </div>
               <div class="col-md-12" style="padding-top: 0.5rem;">
                 <div class="sm-tiles-more">
-                  <a href="">How to improve your skill</a>
+                  <a href="">Upload Your Own Video</a>
                 </div>
               </div>
             </div>
@@ -119,18 +123,15 @@
                   <a>People</a>
                   <a>View All</a>
                 </div>
-                <div class="lg-tiles">
-                  <a href="">How to improve your skill</a>
+                <div class="lg-tiles" [style.backgroundImage]="'url('+ articles[5].urlToImage +')'">
+                  <h5>{{articles[5].title}}</h5>
+                  <a href="">{{articles[5].author}}</a>
                 </div>
               </div>
-              <div class="col-sm-6" style="padding-bottom: 0.5rem; padding-right: 0.5rem;">
-                <div class="sm-tiles">
-                  <a href="">How to improve your skill</a>
-                </div>
-              </div>
-              <div class="col-sm-6" style="padding-bottom: 0.5rem; padding-right: 0.5rem;">
-                <div class="sm-tiles">
-                  <a href="">How to improve your skill</a>
+              <div *ngFor="let item of articles | slice:6:8" class="col-sm-6" style="padding-bottom: 0.5rem; padding-right: 0.5rem;">
+                <div class="sm-tiles" [style.backgroundImage]="'url('+ item.urlToImage +')'">
+                  <h6>{{item.title}}</h6>
+                  <a href="">{{item.author}}</a>
                 </div>
               </div>
             </div>
@@ -138,36 +139,97 @@
           <div class="col-md-4">
             <div class="row">
               <div class="col-md-12">
-                <div class="sm-tiles mt-4">
-                  <a href="">How to improve your skill</a>
+                <div class="sm-tiles mt-4" [style.backgroundImage]="'url('+ articles[10].urlToImage +')'">
+                  <h6>{{articles[10].title}}</h6>
+                  <a href="">{{articles[10].author}}</a>
                 </div>
               </div>
               <div class="col-md-12" style="padding-top: 0.5rem;">
-                <div class="sm-tiles">
-                  <a href="">How to improve your skill</a>
+                <div class="sm-tiles" [style.backgroundImage]="'url('+ articles[11].urlToImage +')'">
+                  <h6>{{articles[11].title}}</h6>
+                  <a href="">{{articles[11].author}}</a>
                 </div>
               </div>
               <div class="col-md-12" style="padding-top: 0.5rem;">
                 <div class="sm-tiles-more">
-                  <a href="">How to improve your skill</a>
+                  <a href="">Share Your Document</a>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
       <div class="col-md-3 col-xs-12">
-        Activity
+        Channels
         <div class="sidebar">
           <div class="list-group mt-2 mb-2">
-            <div class="d-flex">
-              <div class="sm-fakeimg"></div>
-              <h6 class="m-0 p-0">John Stainior</h6>
-              <small>&nbsp; Commented</small>
-              <div></div>
+            <div class="row">
+              <div class="col">
+                <div class="sm-tiles"></div>
+              </div>
+
+              <div class="col">
+                <div class="sm-tiles"></div>
+              </div>
+
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-9 col-xs-12">
+        <div class="row no-gutters">
+          <div class="col-md-8">
+            <div class="row no-gutters">
+              <div class="col-12" style="padding-bottom: 0.5rem; padding-right: 0.5rem;">
+                <div class="d-flex justify-content-between">
+                  <a>Documents</a>
+                  <a>Browse All Documents</a>
+                </div>
+                <div class="lg-tiles" [style.backgroundImage]="'url('+ articles[12].urlToImage +')'">
+                  <h5>{{articles[12].title}}</h5>
+                  <a href="">{{articles[12].author}}</a>
+                </div>
+              </div>
+              <div *ngFor="let item of articles | slice:13:15" class="col-sm-6" style="padding-bottom: 0.5rem; padding-right: 0.5rem;">
+                <div class="sm-tiles" [style.backgroundImage]="'url('+ item.urlToImage +')'">
+                  <h6>{{item.title}}</h6>
+                  <a href="">{{item.author}}</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="sm-tiles mt-4" [style.backgroundImage]="'url('+ articles[16].urlToImage +')'">
+                  <h6>{{articles[16].title}}</h6>
+                  <a href="">{{articles[16].author}}</a>
+                </div>
+              </div>
+              <div class="col-md-12" style="padding-top: 0.5rem;">
+                <div class="sm-tiles" [style.backgroundImage]="'url('+ articles[17].urlToImage +')'">
+                  <h6>{{articles[17].title}}</h6>
+                  <a href="">{{articles[17].author}}</a>
+                </div>
+              </div>
+              <div class="col-md-12" style="padding-top: 0.5rem;">
+                <div class="sm-tiles-more">
+                  <a href="">Upload Your Own Video</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-xs-12">
+       <!-- Spacing -->
       </div>
     </div>
   </div>
