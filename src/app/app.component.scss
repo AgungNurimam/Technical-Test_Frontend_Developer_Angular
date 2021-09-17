@@ -1,9 +1,9 @@
-// .wrapper {
-//   margin-left: 12rem;
-//   margin-right: 12rem;
-//   margin-top: 2rem;
-//   margin-bottom: 2rem;
-// }
+.wrapper {
+  margin-left: 12rem;
+  margin-right: 12rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 
 /* Header/Blog Title */
 .header {
@@ -215,21 +215,40 @@
   height: 100%;
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media only screen and (max-width: 600px) {
+@media only screen and (min-device-width: 768px) {
   .wrapper {
-    padding: 0.5rem !important;
+    margin: 0.2rem;
   }
-  // .leftcolumn,
-  // .rightcolumn {
-  //   width: 100%;
-  //   padding: 0;
-  // }
+
+  .box-search {
+    width: 12rem;
+  }
 }
 
-// @media only screen and (min-device-width: 480px) {
-//   .wrapper {
-//     padding-left: 20px;
-//     padding-right: 20px;
-//   }
-// }
+@media screen and (max-width: 600px) {
+  .wrapper {
+    margin: 0.2rem;
+  }
+
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
