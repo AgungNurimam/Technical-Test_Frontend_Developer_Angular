@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ArticleService {
-  url = 'https://newsapi.org/v2/top-headlines?country=id&apiKey=56c0f27708ca40d2bae0878c1a94abd1';
+  url = 'https://api-berita-indonesia.vercel.app/antara/tekno/';
 
   constructor(private httpClient: HttpClient) { }
 
