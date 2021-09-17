@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ArticleService {
-  url = 'https://newsapi.org/v2/top-headlines?country=id&apiKey=56c0f27708ca40d2bae0878c1a94abd1';
+  url = 'http://api.mediastack.com/v1/news?access_key=4f553b581b2d3ea0320e09919f157085';
 
   constructor(private httpClient: HttpClient) { }
 

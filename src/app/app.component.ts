@@ -13,8 +13,9 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.articleService.getPosts().subscribe((response: any) => {
-      console.log('XXX Response', response.articles);
-      this.articles = response.articles;
+      console.log('XXX Response', response);
+      this.articles = response.data.posts;
+      console.log('XXX Article', this.articles)
     });
   
   }
