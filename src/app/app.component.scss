@@ -1,3 +1,190 @@
-p {
-  font-family: Lato;
+body {
+  font-family: Arial;
+  font-size: 1.2rem !important;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+.wrapper {
+  margin-left: 12rem;
+  margin-right: 12rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  // text-align: center;
+  background: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box-search {
+  width: 30rem;
+}
+
+.btn-upload {
+  font-size: 1.2rem;
+  border: 1px solid;
+}
+
+.account-info {
+  display: flex;
+  gap: 1rem;
+
+  .user-info {
+    padding: 0.5rem 1rem;
+  }
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+// .topnav a.active {
+//   background-color: #04AA6D;
+//   color: white;
+// }
+
+.topnav .icon {
+  display: none;
+}
+
+.container {
+  padding: 0;
+}
+
+.lg-tiles {
+  background-image: url("https://picsum.photos/800");
+  width: 100%;
+  height: 308px;
+  // border: 1px solid;
+  overflow: hidden;
+  // display: table-cell;
+  vertical-align: bottom;
+  padding: 20px;
+
+   a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.sm-tiles {
+  background-image: url("https://picsum.photos/600");
+  width: 100%;
+  height: 150px;
+  // border: 1px solid;
+  overflow: hidden;
+  color: white;
+  // display: table-cell;
+  vertical-align: bottom;
+  padding: 20px;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  & > [class^="col-"],
+  & > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+
+.sidebar {
+  border-top: 4px solid;
+  border-bottom: 2px solid;
+}
+
+
+
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.sm-fakeimg {
+  background-color: #aaa;
+  width: 50px;
+  height: 50px;
+  margin-right: 0.5rem;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
 }
