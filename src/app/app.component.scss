@@ -215,13 +215,13 @@
   height: 100%;
 }
 
-@media only screen and (min-device-width: 768px) {
+@media screen and (max-width: 1024px) {
   .wrapper {
     margin: 0.2rem;
   }
 
   .box-search {
-    width: 12rem;
+    width: 10rem;
   }
 }
 
